@@ -30,9 +30,17 @@ const Login = () => {
 
             alert('Usuário ou senha inválido')
         }catch(e){
-            //TODO: HOUVE UM ERRO
+            console.log(e)
         }
     };
+
+    const navigateToEsqueci = () => {
+        navigate('/esqueci')
+    }
+
+    const navigateToCriar = () => {
+        navigate('/cadastro')
+    }
 
     console.log('errors', errors);
 
@@ -55,8 +63,8 @@ const Login = () => {
                     <Button title="Entrar" variant="secondary" type="submit"/>
                 </form>
                 <Row>
-                    <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <EsqueciText type="button" onClick={navigateToEsqueci}>Esqueci minha senha</EsqueciText>
+                    <CriarText type="button" onClick={navigateToCriar}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>

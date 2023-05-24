@@ -28,8 +28,6 @@ export const Row = styled.div`
     margin-top: 20px;
 `
 
-
-
 export const Title = styled.h2`
     font-family: 'Open Sans';
     font-style: normal;
@@ -42,7 +40,7 @@ export const Title = styled.h2`
     color: #FFFFFF;
 `
 
-export const TitleLogin = styled.p`
+export const TitleCadastro = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -51,7 +49,7 @@ export const TitleLogin = styled.p`
     margin-bottom: 8px;
 `
 
-export const SubtitleLogin = styled.p`
+export const SubtitleCadastro = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -61,20 +59,24 @@ export const SubtitleLogin = styled.p`
 `
 
 
-export const EsqueciText  = styled.button`
-    background: none;
-    border: none;
+export const AgreementText  = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
     line-height: 19px;
-    cursor: pointer;
-
-    color: #E5E044;
+    margin-top: 20px;
 ` 
 
-export const CriarText =  styled.button`
+export const AccountText =  styled.p`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+`
+
+export const AccountTextHighlight =  styled.button`
     background: none;
     border: none;
     font-family: 'Open Sans';
@@ -82,7 +84,6 @@ export const CriarText =  styled.button`
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-    cursor: pointer;
-
     color: #23DD7A;
+    cursor: pointer;
 `
